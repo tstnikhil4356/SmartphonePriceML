@@ -4,11 +4,22 @@ import seaborn as sns
 
 df = pd.read_csv('train.csv')
 
-plt.figure(figsize=(12,8))
-sns.heatmap(df.corr(), annot=True, cmap="coolwarm")
-plt.title('Correlation Heatmap')
+sns.set(style="whitegrid")
+plt.figure(figsize=(14, 10))
+
+heatmap = sns.heatmap(
+    df.corr(),
+    annot=True,
+    fmt=".2f",
+    cmap="coolwarm",
+    linewidths=0.5,
+    linecolor='gray',
+    annot_kws={"size": 8}
+)
+
+plt.title('📊 Feature Correlation Heatmap – Smartphone Price Prediction', fontsize=16, fontweight='bold', pad=20)
 plt.tight_layout()
-plt.savefig("Correaltion_heatmap.png")
+plt.savefig("heatmap.png", dpi=300)
 plt.show()
 
 
