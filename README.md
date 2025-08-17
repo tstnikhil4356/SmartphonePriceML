@@ -25,7 +25,7 @@ Used the [Mobile Price Classification Dataset](https://www.kaggle.com/datasets/i
 ## 🧪 Exploratory Data Analysis (EDA)
 
 ### 🔥 Feature Correlation Heatmap
-![Heatmap](Correaltion_heatmap.png)
+![Heatmap](heatmap.png)
 
 ### 💾 RAM vs Price Range
 ![Boxplot](RAM_vs_Price_Range.png)
